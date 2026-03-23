@@ -1,0 +1,8 @@
+SELECT TOP (1000) [id]
+      ,[CustomerName]
+      ,[Address]
+      ,[Service]
+      ,[Gallons]
+      ,[TotalPrice]
+      ,[OrderDate]
+  FROM [TrioFlowDB].[dbo].[Orders]
