@@ -1,0 +1,5 @@
+SELECT TOP (1000) [UserID]
+      ,[Username]
+      ,[Password]
+      ,[CreatedAt]
+  FROM [TrioFlowDB].[dbo].[Users]

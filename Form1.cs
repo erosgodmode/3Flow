@@ -29,7 +29,7 @@ namespace TrioFlow
             f2.Show();
             this.Hide();
         }
-        
+
 
         private void btnExit_Click(object sender, EventArgs e)
         {
@@ -39,6 +39,11 @@ namespace TrioFlow
         private void cmbService_SelectedIndexChanged(object sender, EventArgs e)
         {
             // Optional: do something when selection changes
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

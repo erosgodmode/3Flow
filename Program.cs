@@ -1,6 +1,5 @@
 using System;
 using System.Windows.Forms;
-using Microsoft.VisualBasic;
 
 namespace TrioFlow
 {
@@ -10,7 +9,7 @@ namespace TrioFlow
         static void Main()
         {
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+            Application.Run(new LoginForm());
         }
     }
 }

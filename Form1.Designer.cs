@@ -8,7 +8,6 @@
         private ComboBox cmbService;
         private Button btnProceed;
         private Button btnExit;
-        private PictureBox pictureBox1;
 
         protected override void Dispose(bool disposing)
         {
@@ -21,7 +20,6 @@
 
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             label1 = new Label();
             label2 = new Label();
             cmbService = new ComboBox();
@@ -35,9 +33,8 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
-            label1.Location = new Point(200, 20);
+            label1.Location = new Point(189, 9);
             label1.Name = "label1";
-
             label1.Size = new Size(156, 30);
             label1.TabIndex = 0;
             label1.Text = "WELCOME TO";
@@ -46,7 +43,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
-            label2.Location = new Point(80, 60);
+            label2.Location = new Point(96, 50);
             label2.Name = "label2";
             label2.Size = new Size(338, 30);
             label2.TabIndex = 1;
@@ -56,15 +53,15 @@
             // 
             cmbService.FormattingEnabled = true;
             cmbService.Items.AddRange(new object[] { "Gallon Refill", "Home Delivery", "New Container" });
-            cmbService.Location = new Point(200, 110);
+            cmbService.Location = new Point(189, 93);
             cmbService.Name = "cmbService";
-            cmbService.Size = new Size(170, 23);
+            cmbService.Size = new Size(156, 23);
             cmbService.TabIndex = 2;
             cmbService.SelectedIndexChanged += cmbService_SelectedIndexChanged;
             // 
             // btnProceed
             // 
-            btnProceed.Location = new Point(295, 140);
+            btnProceed.Location = new Point(270, 122);
             btnProceed.Name = "btnProceed";
             btnProceed.Size = new Size(75, 25);
             btnProceed.TabIndex = 3;
@@ -74,7 +71,7 @@
             // 
             // btnExit
             // 
-            btnExit.Location = new Point(200, 140);
+            btnExit.Location = new Point(189, 122);
             btnExit.Name = "btnExit";
             btnExit.Size = new Size(75, 25);
             btnExit.TabIndex = 4;
@@ -84,17 +81,18 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(-227, -219);
+            pictureBox1.BackColor = Color.Transparent;
+            pictureBox1.BackgroundImage = Properties.Resources.bg1;
+            pictureBox1.Image = Properties.Resources.bg1;
+            pictureBox1.Location = new Point(-113, -269);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1310, 827);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.Size = new Size(715, 699);
             pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;
             // 
             // Form1
             // 
-            ClientSize = new Size(560, 400);
+            ClientSize = new Size(544, 361);
             Controls.Add(label1);
             Controls.Add(label2);
             Controls.Add(cmbService);
@@ -108,5 +106,7 @@
             ResumeLayout(false);
             PerformLayout();
         }
+
+        private PictureBox pictureBox1;
     }
 }

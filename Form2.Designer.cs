@@ -25,100 +25,138 @@
 
         private void InitializeComponent()
         {
-            this.label1 = new Label();
-            this.lblName = new Label();
-            this.lblAddress = new Label();
-            this.lblGallons = new Label();
-            this.lblService = new Label();
-            this.lblResult = new Label();
-            this.txtName = new TextBox();
-            this.txtAddress = new TextBox();
-            this.txtGallons = new TextBox();
-            this.btnOrder = new Button();
-            this.SuspendLayout();
-
-            // label1 - Title
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(130, 10);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(250, 30);
-            this.label1.Text = "Customer Information";
-
-            // lblService
-            this.lblService.AutoSize = true;
-            this.lblService.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.lblService.Location = new System.Drawing.Point(50, 50);
-            this.lblService.Name = "lblService";
-            this.lblService.Size = new System.Drawing.Size(150, 20);
-            this.lblService.Text = "Selected Service:";
-
+            label1 = new Label();
+            lblName = new Label();
+            lblAddress = new Label();
+            lblGallons = new Label();
+            lblService = new Label();
+            lblResult = new Label();
+            txtName = new TextBox();
+            txtAddress = new TextBox();
+            txtGallons = new TextBox();
+            btnOrder = new Button();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            SuspendLayout();
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
+            label1.Location = new Point(130, 10);
+            label1.Name = "label1";
+            label1.Size = new Size(242, 30);
+            label1.TabIndex = 0;
+            label1.Text = "Customer Information";
+            // 
             // lblName
-            this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(50, 90);
-            this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(39, 15);
-            this.lblName.Text = "Name";
-
-            // txtName
-            this.txtName.Location = new System.Drawing.Point(150, 85);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(200, 23);
-
+            // 
+            lblName.AutoSize = true;
+            lblName.Location = new Point(50, 90);
+            lblName.Name = "lblName";
+            lblName.Size = new Size(39, 15);
+            lblName.TabIndex = 2;
+            lblName.Text = "Name";
+            // 
             // lblAddress
-            this.lblAddress.AutoSize = true;
-            this.lblAddress.Location = new System.Drawing.Point(50, 125);
-            this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(50, 15);
-            this.lblAddress.Text = "Address";
-
-            // txtAddress
-            this.txtAddress.Location = new System.Drawing.Point(150, 120);
-            this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(200, 23);
-
+            // 
+            lblAddress.AutoSize = true;
+            lblAddress.Location = new Point(50, 125);
+            lblAddress.Name = "lblAddress";
+            lblAddress.Size = new Size(49, 15);
+            lblAddress.TabIndex = 4;
+            lblAddress.Text = "Address";
+            // 
             // lblGallons
-            this.lblGallons.AutoSize = true;
-            this.lblGallons.Location = new System.Drawing.Point(50, 160);
-            this.lblGallons.Name = "lblGallons";
-            this.lblGallons.Size = new System.Drawing.Size(46, 15);
-            this.lblGallons.Text = "Gallons";
-
-            // txtGallons
-            this.txtGallons.Location = new System.Drawing.Point(150, 155);
-            this.txtGallons.Name = "txtGallons";
-            this.txtGallons.Size = new System.Drawing.Size(200, 23);
-
-            // btnOrder
-            this.btnOrder.Location = new System.Drawing.Point(150, 190);
-            this.btnOrder.Name = "btnOrder";
-            this.btnOrder.Size = new System.Drawing.Size(100, 25);
-            this.btnOrder.Text = "Place Order";
-            this.btnOrder.Click += new System.EventHandler(this.btnOrder_Click);
-
+            // 
+            lblGallons.AutoSize = true;
+            lblGallons.Location = new Point(50, 160);
+            lblGallons.Name = "lblGallons";
+            lblGallons.Size = new Size(46, 15);
+            lblGallons.TabIndex = 6;
+            lblGallons.Text = "Gallons";
+            // 
+            // lblService
+            // 
+            lblService.AutoSize = true;
+            lblService.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            lblService.Location = new Point(50, 50);
+            lblService.Name = "lblService";
+            lblService.Size = new Size(124, 19);
+            lblService.TabIndex = 1;
+            lblService.Text = "Selected Service:";
+            // 
             // lblResult
-            this.lblResult.AutoSize = true;
-            this.lblResult.Location = new System.Drawing.Point(50, 230);
-            this.lblResult.Name = "lblResult";
-            this.lblResult.Size = new System.Drawing.Size(0, 15);
-
+            // 
+            lblResult.AutoSize = true;
+            lblResult.Location = new Point(50, 230);
+            lblResult.Name = "lblResult";
+            lblResult.Size = new Size(0, 15);
+            lblResult.TabIndex = 9;
+            // 
+            // txtName
+            // 
+            txtName.Location = new Point(150, 85);
+            txtName.Name = "txtName";
+            txtName.Size = new Size(200, 23);
+            txtName.TabIndex = 3;
+            // 
+            // txtAddress
+            // 
+            txtAddress.Location = new Point(150, 120);
+            txtAddress.Name = "txtAddress";
+            txtAddress.Size = new Size(200, 23);
+            txtAddress.TabIndex = 5;
+            // 
+            // txtGallons
+            // 
+            txtGallons.Location = new Point(150, 155);
+            txtGallons.Name = "txtGallons";
+            txtGallons.Size = new Size(200, 23);
+            txtGallons.TabIndex = 7;
+            // 
+            // btnOrder
+            // 
+            btnOrder.Location = new Point(150, 190);
+            btnOrder.Name = "btnOrder";
+            btnOrder.Size = new Size(100, 25);
+            btnOrder.TabIndex = 8;
+            btnOrder.Text = "Place Order";
+            btnOrder.Click += btnOrder_Click;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BackgroundImage = Properties.Resources.bg1;
+            pictureBox1.Image = Properties.Resources.bg1;
+            pictureBox1.Location = new Point(-123, -245);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(583, 688);
+            pictureBox1.TabIndex = 10;
+            pictureBox1.TabStop = false;
+            // 
             // Form2
-            this.ClientSize = new System.Drawing.Size(450, 400);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.lblService);
-            this.Controls.Add(this.lblName);
-            this.Controls.Add(this.txtName);
-            this.Controls.Add(this.lblAddress);
-            this.Controls.Add(this.txtAddress);
-            this.Controls.Add(this.lblGallons);
-            this.Controls.Add(this.txtGallons);
-            this.Controls.Add(this.btnOrder);
-            this.Controls.Add(this.lblResult);
-            this.Name = "Form2";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "TrioFlow Customer Form";
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            // 
+            ClientSize = new Size(450, 400);
+            Controls.Add(label1);
+            Controls.Add(lblService);
+            Controls.Add(lblName);
+            Controls.Add(txtName);
+            Controls.Add(lblAddress);
+            Controls.Add(txtAddress);
+            Controls.Add(lblGallons);
+            Controls.Add(txtGallons);
+            Controls.Add(btnOrder);
+            Controls.Add(lblResult);
+            Controls.Add(pictureBox1);
+            Name = "Form2";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "TrioFlow Customer Form";
+            Load += Form2_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
+
+        private PictureBox pictureBox1;
     }
 }

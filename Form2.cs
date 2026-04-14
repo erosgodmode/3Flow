@@ -19,10 +19,9 @@ namespace TrioFlow
 
         private void btnOrder_Click(object sender, EventArgs e)
         {
-            // Use InputBox for simple testing (no designer issues)
-            string name = Microsoft.VisualBasic.Interaction.InputBox("Enter Customer Name:", "Customer Name");
-            string address = Microsoft.VisualBasic.Interaction.InputBox("Enter Address:", "Address");
-            string gallonsText = Microsoft.VisualBasic.Interaction.InputBox("Enter Gallons:", "Gallons");
+            string name = txtName.Text;
+            string address = txtAddress.Text;
+            string gallonsText = txtGallons.Text;
 
             if (string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(address) ||
                 !int.TryParse(gallonsText, out int gallons) || gallons <= 0)
@@ -71,6 +70,11 @@ namespace TrioFlow
                                   MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
