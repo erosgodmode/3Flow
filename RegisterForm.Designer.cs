@@ -125,6 +125,7 @@
             pictureBox1.Size = new Size(745, 808);
             pictureBox1.TabIndex = 9;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // lblFullName
             // 

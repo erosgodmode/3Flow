@@ -121,5 +121,10 @@ namespace TrioFlow
             pictureBoxProfile.Image = null;
             profileImageBytes = null;
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -36,9 +36,9 @@ namespace TrioFlow
                 if (count > 0)
                 {
                     MessageBox.Show("Login successful! Welcome " + user);
-                    Form1 f1 = new Form1();
-                    f1.Show();
-                    this.Hide();
+Form3 f3 = new Form3();
+f3.Show();
+this.Hide();
                 }
                 else
                 {
